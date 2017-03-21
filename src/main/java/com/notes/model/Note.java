@@ -19,7 +19,7 @@ public class Note {
   @Column(name="CONTENT", length=2048)
   @NotEmpty
   private String content;
-  private Boolean done;
+  private Boolean done = false;
   
   public Long getId() {
     return id;
